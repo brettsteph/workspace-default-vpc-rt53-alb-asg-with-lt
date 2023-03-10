@@ -35,3 +35,5 @@ terraform.rc
 
 # Ignore lock file
 .terraform.lock.hcl
+
+/temp/*
