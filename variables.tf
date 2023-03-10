@@ -9,21 +9,7 @@ variable "AWS_ACCESS_KEY_ID" {
 variable "AWS_SECRET_ACCESS_KEY" {
   type = string
 }
-# variable "vpc-id" {
-#   type        = string
-#   description = "VPC id"
-#   default     = "vpc-092910cd6be87fee9"
-# }
-# variable "public-subnets" {
-#   type        = list
-#   description = "Default VPC Public subnets - us-east-1a, us-east-1b"
-#   default     = ["subnet-05b5a0bf482cdcf33", "subnet-0bda27ca4d6ed508f"]
-# }
-# variable "availability-zones" {
-#   type        = list
-#   description = "Availability zone"
-#   default     = ["us-east-1a", "us-east-1b"]
-# }
+
 variable "tags" {
   type        = map(any)
   description = "Tags"
@@ -36,16 +22,7 @@ variable "private_access_key" {
   type        = string
   description = "Access Key Pair"
 }
-# variable "instance-name" {
-#   type        = string
-#   description = "Instance name"
-#   default     = "Static Site Web Server"
-# }
-# variable "instance-ami" {
-#   type        = string
-#   description = "Linux 2 AMI"
-#   default     = "ami-0c02fb55956c7d316"
-# }
+
 variable "instance_type" {
   type        = string
   description = "Instance type"
