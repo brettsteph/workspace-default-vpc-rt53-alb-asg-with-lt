@@ -1,12 +1,12 @@
-variable "region" {
+variable "AWS_REGION" {
   type        = string
   description = "VPC region"
 }
-variable "aws_access_key_id" {
+variable "AWS_ACCESS_KEY_ID" {
   type = string
 }
 
-variable "aws_secret_access_key" {
+variable "AWS_SECRET_ACCESS_KEY" {
   type = string
 }
 # variable "vpc-id" {
