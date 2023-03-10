@@ -48,13 +48,13 @@ variable "ebs-size" {
 #   default     = "static-web-site"
 # }
 
-# variable "domain" {
-#   type        = string
-#   description = "Hosted zone domain"
-#   default     = "brettstephen.com"
-# }
-# variable "sub_domain" {
-#   type        = string
-#   description = "site sub domain"
-#   default     = "aws-ec2.brettstephen.com"
-# }
+variable "domain" {
+  type        = string
+  description = "Hosted zone domain"
+  default     = "brettstephen.com"
+}
+variable "sub_domain" {
+  type        = string
+  description = "site sub domain"
+  default     = "tfaws01.brettstephen.com"
+}
