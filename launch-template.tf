@@ -102,6 +102,10 @@ resource "aws_autoscaling_group" "scaling_group" {
     id      = aws_launch_template.lt.id
     version = "$Latest"
   }
+
+  depends_on = [
+    aws_launch_template.lt
+  ]
 }
 
 # Create a new ALB Target Group attachment
