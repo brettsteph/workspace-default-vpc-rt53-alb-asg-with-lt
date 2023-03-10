@@ -1,7 +1,13 @@
 variable "region" {
   type        = string
   description = "VPC region"
-  default     = "us-east-1"
+}
+variable "aws_access_key_id" {
+  type = string
+}
+
+variable "aws_secret_access_key" {
+  type = string
 }
 # variable "vpc-id" {
 #   type        = string
@@ -26,10 +32,9 @@ variable "tags" {
     Environment = "dev"
   }
 }
-variable "access-key" {
+variable "private_access_key" {
   type        = string
   description = "Access Key Pair"
-  default     = "ssh-cloudops-key"
 }
 # variable "instance-name" {
 #   type        = string
@@ -41,15 +46,14 @@ variable "access-key" {
 #   description = "Linux 2 AMI"
 #   default     = "ami-0c02fb55956c7d316"
 # }
-variable "instance-type" {
+variable "instance_type" {
   type        = string
   description = "Instance type"
   default     = "t2.micro"
 }
-variable "my-ip-cidr-block" {
+variable "my_ip_cidr_block" {
   type        = string
   description = "My IP address CIDR"
-  default     = "162.192.198.83/32"
 }
 variable "ebs-type" {
   type        = string
@@ -61,19 +65,19 @@ variable "ebs-size" {
   description = "EBS Volume size, must be >= 8GB"
   default     = 8
 }
-variable "s3-bucket-name" {
-  type        = string
-  description = "Name of s3 bucket where static web files are stored"
-  default     = "ec2-with-static-site"
-}
+# variable "s3_bucket_name" {
+#   type        = string
+#   description = "Name of s3 bucket where static web files are stored"
+#   default     = "static-web-site"
+# }
 
-variable "domain" {
-  type        = string
-  description = "Hosted zone domain"
-  default     = "brettstephen.com"
-}
-variable "sub-domain" {
-  type        = string
-  description = "site sub domain"
-  default     = "aws-ec2.brettstephen.com"
-}
+# variable "domain" {
+#   type        = string
+#   description = "Hosted zone domain"
+#   default     = "brettstephen.com"
+# }
+# variable "sub_domain" {
+#   type        = string
+#   description = "site sub domain"
+#   default     = "aws-ec2.brettstephen.com"
+# }

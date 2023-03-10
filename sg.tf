@@ -9,7 +9,7 @@ resource "aws_security_group" "web-security-group" {
     from_port   = 22
     to_port     = 22
     protocol    = "tcp"
-    cidr_blocks = [var.my-ip-cidr-block]
+    cidr_blocks = [var.my_ip_cidr_block]
     # ipv6_cidr_blocks = [aws_vpc.main.ipv6_cidr_block]
   }
 

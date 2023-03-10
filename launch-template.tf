@@ -47,11 +47,11 @@ resource "aws_launch_template" "lt" {
   #   market_type = "spot"
   # }
 
-  instance_type = var.instance-type
+  instance_type = var.instance_type
 
   # kernel_id = "test"
 
-  key_name = var.access-key
+  key_name = var.private_access_key
 
   # license_specification {
   #   license_configuration_arn = "arn:aws:license-manager:eu-west-1:123456789012:license-configuration:lic-0123456789abcdef0123456789abcdef"

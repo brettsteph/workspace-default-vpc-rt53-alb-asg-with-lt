@@ -1,5 +1,5 @@
 # # Route 53 Zone
-# data "aws_route53_zone" "hosted-zone" {
+# data "aws_route53_zone" "hosted_zone" {
 #   name         = var.domain
 #   private_zone = false
 #   # provider     = aws.virginia
@@ -12,8 +12,8 @@
 #   # provider    = aws.virginia
 # }
 
-# resource "aws_route53_record" "a-www" {
-#   zone_id = data.aws_route53_zone.hosted-zone.zone_id
+# resource "aws_route53_record" "a_record" {
+#   zone_id = data.aws_route53_zone.hosted_zone.zone_id
 #   name    = var.sub-domain
 #   type    = "A"
 #   # ttl     = "300"
