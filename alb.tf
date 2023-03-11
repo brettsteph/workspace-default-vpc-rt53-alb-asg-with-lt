@@ -49,10 +49,23 @@ resource "aws_lb_listener" "alb-listener" {
     target_group_arn = aws_lb_target_group.http.arn
     type = "forward"
   }
+  # default_action {
+  #   type = "fixed-response"
+
+  #   fixed_response {
+  #     content_type = "text/plain"
+  #     message_body = "404: page not found"
+  #     status_code  = "404"
+  #   }
+  # }
   # certificate_arn = aws_acm_certificate_validation.validation.certificate_arn
 }
 
-# #  Attach instance to ALB target group 
+# //TODO Add listener rule
+
+
+
+# #  Attach instance(s) to ALB target group - NOT used when using Launch Template
 # resource "aws_lb_target_group_attachment" "attachment" {
 #   target_group_arn = aws_lb_target_group.http.arn
 #   target_id        = aws_lb.alb.arn
