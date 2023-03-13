@@ -10,5 +10,5 @@ The Terraform configuration provisions the following resources in AWS:
 6. Launch Template
 7. Auto Scaling Group
 
-Sensitive variable values are stored in Terraform Cloud
+Sensitive variable values are stored in Terraform Cloud.
 
