@@ -51,10 +51,10 @@ variable "ebs-size" {
 variable "domain" {
   type        = string
   description = "Hosted zone domain"
-  default     = ""
+  default     = "brettstephen.com"
 }
 variable "sub_domain" {
   type        = string
   description = "site sub domain"
-  default     = ""
+  default     = "aws-alb-lt.brettstephen.com"
 }
